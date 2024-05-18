@@ -1,0 +1,14 @@
+{
+    "comandos":[
+        {
+            "name":"abrir",
+            "identificador":["abrir", "abra","abre","iniciar"],
+            "itens":[
+                
+            ]
+        }
+    ]
+
+}
+
+    
