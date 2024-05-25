@@ -16,8 +16,8 @@ def Assistente():
             microfone.adjust_for_ambient_noise(source)
             audio = microfone.listen(source, None, 5)
             try:
-                frase = microfone.recognize_google(audio, language="pt-br")
-                print(f"Usuario>>{frase.lower()}")
+                frase = microfone.recognize_google(audio, language="pt-br").lower()
+                print(f"Usuario>>{frase}")
                 if "eva" in frase or "iniciar" in frase:
                     speak("Iniciando")
                     Iniciando_Assistente()
