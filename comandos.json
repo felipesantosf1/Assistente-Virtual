@@ -9,8 +9,18 @@
                     "palavra_chave":["google"],
                     "url":"https://www.google.com",
                     "speak":"abrindo o google!"
+                },
+                {
+                    "programa":"bloco de notas",
+                    "palavra_chave":["bloco de notas"],
+                    "name_program":"notepad.exe",
+                    "speak":"abrindo o bloco de notas!"
                 }
             ]
+        },
+        {
+            "name" : "calculadora",
+            "identificador":["mais", "menos", "dividido", "quanto", "+","-","*","x","/","%"]
         },
         {
             "name":"horario",

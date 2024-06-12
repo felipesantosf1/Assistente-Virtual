@@ -1,7 +1,9 @@
 import json
 import pyttsx3
 import webbrowser
+import subprocess
 from datetime import datetime
+from modulos.calcula import Calculadora
 
 voz = pyttsx3.init()
 agora = datetime.now()
@@ -24,7 +26,13 @@ def Comandos(frase):
                                 if item.get("url"):
                                     webbrowser.open(item["url"])
                                     speak(item["speak"])
+                                elif item.get("name_program"):
+                                    subprocess.Popen(item["name_program"])
+                                    speak(item["speak"])
+                                    pass
                 elif name == "horario":
                     speak(f"São {agora.hour}, horas e {agora.minute} minutos")
                 elif name == "data":
                     speak(f"Hoje é dia {agora.day} do {agora.month} de {agora.year}")
+                elif name == "calculadora":
+                    speak(Calculadora(frase))
