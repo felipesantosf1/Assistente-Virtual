@@ -16,7 +16,7 @@ def Calculadora(frase):
             return f"{numbers[0]} menos {numbers[1]} é igual a {result}"
         
         if "vezes" in frase or "*" in frase:
-            result = numbers[0] + numbers[1]
+            result = numbers[0] * numbers[1]
             return f"{numbers[0]} vezes {numbers[1]} é igual a {result}"
         
         if "dividido" in frase or "/" in frase:
