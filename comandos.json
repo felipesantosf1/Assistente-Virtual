@@ -29,6 +29,10 @@
         {
             "name":"data",
             "identificador":["que dia", "é hoje", "de hoje","qual dia","que data"]
+        },
+        {
+            "name":"pesquisa",
+            "identificador":["procurar", "pesquisar", "pesquisa", "procura"]
         }
     ]
 

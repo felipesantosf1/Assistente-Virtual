@@ -4,6 +4,7 @@ import webbrowser
 import subprocess
 from datetime import datetime
 from modulos.calcula import Calculadora
+from modulos.pesquisa import realizar_pesquisa
 
 voz = pyttsx3.init()
 agora = datetime.now()
@@ -36,3 +37,5 @@ def Comandos(frase):
                     speak(f"Hoje é dia {agora.day} do {agora.month} de {agora.year}")
                 elif name == "calculadora":
                     speak(Calculadora(frase))
+                elif name == "pesquisa":
+                    speak(realizar_pesquisa(frase))
