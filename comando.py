@@ -5,6 +5,7 @@ import subprocess
 from datetime import datetime
 from modulos.calcula import Calculadora
 from modulos.pesquisa import realizar_pesquisa
+from modulos.criaçao import Create
 
 voz = pyttsx3.init()
 agora = datetime.now()
@@ -39,3 +40,10 @@ def Comandos(frase):
                     speak(Calculadora(frase))
                 elif name == "pesquisa":
                     speak(realizar_pesquisa(frase))
+                    
+                elif name == "criar":
+                    for item in comando["itens"]:
+                        for palavra_chave in item["palavra_chave"]:
+                            if palavra_chave in frase:
+                                name = item["objeto"]
+                                speak(Create(name))

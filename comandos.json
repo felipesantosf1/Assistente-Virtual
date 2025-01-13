@@ -19,6 +19,20 @@
             ]
         },
         {
+            "name":"criar",
+            "identificador":["criar", "cria", "gerar"],
+            "itens":[
+                {
+                    "objeto":"pasta",
+                    "palavra_chave":["pasta"]
+                },
+                {
+                    "objeto":"bloco de notas",
+                    "palavra_chave":["bloco de notas"]
+                }
+            ]  
+        },
+        {
             "name" : "calculadora",
             "identificador":["mais", "menos", "dividido", "quanto", "+","-","*","x","/","%"]
         },

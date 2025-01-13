@@ -9,7 +9,6 @@ def speak(frase):
     voz.say(frase)
     voz.runAndWait()
 
-
 def Assistente():
     while True:
         with sr.Microphone() as source:
