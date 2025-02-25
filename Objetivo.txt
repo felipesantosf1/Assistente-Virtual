@@ -1,3 +1,0 @@
--Criar arquivos txt e pastas
--Calculadora
--Pesquisas
